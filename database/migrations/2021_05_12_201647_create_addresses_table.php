@@ -15,15 +15,15 @@ class CreateAddressesTable extends Migration
     {
         Schema::create('addresses', function (Blueprint $table) {
             $table->id();
-            $table->double('seller_id')->unsigned();
+            $table->integer('seller_id');
             $table->foreign('seller_id')->references('id')->on('sellers')->onDelete('cascade');
             $table->string('email');
             $table->string('tellPhone',15);
             $table->string('cellPhone',15);
             $table->string('website')->nullable();
-            $table->integer('province_id',15);
+            $table->integer('province_id');
             $table->foreign('province_id')->references('id')->on('provinces')->onDelete('cascade');
-            $table->integer('city_id',15);
+            $table->integer('city_id');
             $table->foreign('city_id')->references('id')->on('cities')->onDelete('cascade');
             $table->text('address');
             $table->timestamps();
