@@ -7,5 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Document extends Model
 {
-    use HasFactory;
+    public function photos()
+    {
+        return $this->belongsToMany(Photo::class,'document_photo','document_id','photo_id');
+    }
 }

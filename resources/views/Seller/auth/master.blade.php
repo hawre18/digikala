@@ -13,11 +13,13 @@
     <link rel="stylesheet" href="/assets/Admin/plugins/iCheck/square/blue.css">
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <link rel="stylesheet" href="/assets/Admin/css/dropzone.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body class="hold-transition register-page">
-@include('auth.seller.section.header')
+@include('Seller.auth.section.header')
 @yield('content')
-@include('auth.seller.section.footer')
+@include('Seller.auth.section.footer')
 </body>
 </html>

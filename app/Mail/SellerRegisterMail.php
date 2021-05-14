@@ -30,7 +30,7 @@ class SellerRegisterMail extends Mailable
    public $number;
     public function build()
     {
-        return $this->from('hawremi18@gmail.com')->subject('code register')->view('auth.seller.mail.registerCode')
+        return $this->from('hawremi18@gmail.com')->subject('code register')->view('Seller.Auth.registerCode')
             ->with('data', $this->data);
     }
 }

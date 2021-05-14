@@ -2,33 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86c5ec1b-5b12-443b-a6bd-919f70ed74dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/Admin/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/seller/codeAccept.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/seller/documentsSend.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/seller/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/seller/mail/registerCode.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/seller/master.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/seller/passwords/confirm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/seller/passwords/email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/seller/passwords/reset.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/seller/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/seller/section/errors.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/seller/section/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/seller/section/header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/seller/verify.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Seller/PhotoController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Admin/css/dropzone.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Admin/plugins/dropzone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Seller/auth/documentsSend.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Seller/auth/section/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Seller/auth/section/header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Seller/auth/sellerLogin.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Seller/auth/wellcom.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Seller/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/digikalalara.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/digikalalara.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PhotoController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/Seller/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Seller/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/PhotoRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/PhotoRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/SellerRegisterMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/SellerRegisterMail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Document.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Document.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Photo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Photo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Seller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Seller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_12_193730_create_sellers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_12_193730_create_sellers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_12_201647_create_addresses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_12_201647_create_addresses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/seller/codeAccept.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Seller/auth/codeAccept.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/seller/documentsSend.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/seller/login.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/seller/mail/registerCode.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Seller/auth/registerCode.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/seller/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Seller/auth/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/seller/passwords/confirm.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/seller/passwords/email.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/seller/passwords/reset.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/seller/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Seller/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/seller/section/errors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Seller/auth/contract.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/seller/section/footer.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/seller/section/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Seller/auth/section/errors.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/seller/verify.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,40 +52,27 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/auth/seller/register.blade.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Seller/Auth/SellerLoginController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="30" selection-end-line="33" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/auth/seller/codeAccept.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/auth/seller/mail/registerCode.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/Seller/RegisterController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="59" column="68" selection-start-line="59" selection-start-column="68" selection-end-line="59" selection-end-column="68" />
+            <state relative-caret-position="442">
+              <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
               <folding>
                 <element signature="e#52#88#0#PHP" expanded="true" />
               </folding>
@@ -81,46 +81,83 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/auth/seller/documentsSend.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Seller/SellerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+            <state relative-caret-position="255">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Requests/PhotoRequest.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Seller/PhotoController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PhotoController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="272">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="e#47#83#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Mail/SellerRegisterMail.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/Seller/auth/wellcom.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+            <state>
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2021_05_13_164309_create_photos_table.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/Seller/auth/documentsSend.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+            <state relative-caret-position="170">
+              <caret line="10" column="98" selection-start-line="10" selection-start-column="98" selection-end-line="10" selection-end-column="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/Seller/auth/section/footer.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/Seller/dashboard.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Seller/DocumentController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-204" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/Seller/auth/sellerLogin.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -132,6 +169,7 @@
       <find>di</find>
       <find>dist</find>
       <find>@extends('Admin.msater')</find>
+      <find>file</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -140,57 +178,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/PanelController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2021_05_12_153313_create_provinces_table.php" />
-        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2021_05_12_153442_create_cities_table.php" />
-        <option value="$PROJECT_DIR$/../artist/app/Http/Requests/ArticleRequest.php" />
-        <option value="$PROJECT_DIR$/../digikala/takkala/lte/pages/tables/data.html" />
-        <option value="$PROJECT_DIR$/resources/views/Admin/section/footer.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/Admin/msater.blade.php" />
-        <option value="$PROJECT_DIR$/../digikala/takkala/lte/pages/forms/general.html" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/ProvinceRequest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/CityRequest.php" />
-        <option value="$PROJECT_DIR$/../artist/resources/views/Admin/articles/edit.blade.php" />
-        <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/resources/lang/fa/validation.php" />
-        <option value="$PROJECT_DIR$/app/Models/Province.php" />
-        <option value="$PROJECT_DIR$/resources/views/Admin/section/header.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/Admin/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/Admin/province/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/Admin/province/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/Admin/province/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/Admin/province/show.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/Admin/city/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/Models/City.php" />
-        <option value="$PROJECT_DIR$/resources/views/Admin/city/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ProvinceController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/CityController.php" />
-        <option value="$PROJECT_DIR$/resources/views/Admin/city/edit.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2021_05_12_200351_create_profiles_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2021_05_12_201225_create_financials_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2021_05_13_062048_create_contracts_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2021_05_13_063144_create_documents_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2021_05_13_063627_create_calenders_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2021_05_12_201647_create_addresses_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth/seller/section/footer.blade.php" />
-        <option value="$PROJECT_DIR$/../shabab/pro1/app/Http/Controllers/Auth/RegisterController.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth/seller/master.blade.php" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/app/Mail/SellerRegisterMail.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2021_05_12_193730_create_sellers_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth/seller/mail/registerCode.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/database/migrations/2021_05_13_135547_create_regcopies_table.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/seller/register.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/seller/codeAccept.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/Seller/RegisterController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/Photo.php" />
         <option value="$PROJECT_DIR$/database/migrations/2021_05_13_164309_create_photos_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/PhotoRequest.php" />
         <option value="$PROJECT_DIR$/../shabab/pro1/app/Http/Controllers/ProductController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/Seller/RegisterController.php" />
+        <option value="$PROJECT_DIR$/app/Models/Document.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/DocumentRequest.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/seller/master.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/DocumentController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/PhotoRequest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/PhotoController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/Seller/DocumentController.php" />
+        <option value="G:/New folder/New folder (8)/project/marketuni/resources/views/admin/products/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/Photo.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/seller/documentsSend.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/seller/section/footer.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/Seller/auth/mail/registerCode.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/Seller/section/footer.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/Seller/auth/contract.blade.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/contract.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/wellcom.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Seller/DocumentController.php" />
+        <option value="$PROJECT_DIR$/resources/views/Seller/master.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/Seller/documentsSend.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/Seller/dashbaed.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" />
+        <option value="G:/New folder/New folder (8)/project/marketuni/app/Admin.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/TrimStrings.php" />
+        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/app/Exceptions/Handler.php" />
+        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php" />
+        <option value="$PROJECT_DIR$/config/auth.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Seller/IndexController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Seller/SellerController.php" />
+        <option value="$PROJECT_DIR$/resources/views/Seller/auth/sellerLogin.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/Seller.php" />
+        <option value="$PROJECT_DIR$/resources/views/Seller/auth/register.blade.php" />
+        <option value="$PROJECT_DIR$/app/Mail/SellerRegisterMail.php" />
+        <option value="$PROJECT_DIR$/resources/views/Seller/auth/registerCode.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/Seller/auth/codeAccept.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Seller/Auth/RegisterController.php" />
+        <option value="$PROJECT_DIR$/resources/views/Seller/auth/documentsSend.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/Seller/auth/section/footer.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Seller/PhotoController.php" />
+        <option value="$PROJECT_DIR$/resources/views/Seller/auth/wellcom.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Seller/Auth/SellerLoginController.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/Seller/dashboard.blade.php" />
       </list>
     </option>
   </component>
@@ -302,6 +340,11 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-dompdf" />
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -331,6 +374,12 @@
               <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
               <item name="digikalalara" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digikalalara" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -346,7 +395,16 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Seller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digikalalara" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Seller" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
@@ -386,57 +444,13 @@
             <path>
               <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
               <item name="digikalalara" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digikalalara" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digikalalara" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digikalalara" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digikalalara" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digikalalara" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digikalalara" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-              <item name="fa" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
               <item name="digikalalara" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
-              <item name="digikalalara" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
@@ -450,13 +464,76 @@
               <item name="digikalalara" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Seller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digikalalara" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Seller" type="462c0819:PsiDirectoryNode" />
               <item name="auth" type="462c0819:PsiDirectoryNode" />
-              <item name="seller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
               <item name="digikalalara" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digikalalara" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digikalalara" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digikalalara" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digikalalara" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="2021" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digikalalara" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="2021" type="462c0819:PsiDirectoryNode" />
+              <item name="sellers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digikalalara" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="2021" type="462c0819:PsiDirectoryNode" />
+              <item name="sellers" type="462c0819:PsiDirectoryNode" />
+              <item name="photos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="digikalalara" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digikalalara" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="2021" type="462c0819:PsiDirectoryNode" />
+              <item name="sellers" type="462c0819:PsiDirectoryNode" />
+              <item name="photos" type="462c0819:PsiDirectoryNode" />
+              <item name="documents" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -473,18 +550,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\manitak\Desktop\digikalalara\resources\views\auth\seller" />
-      <recent name="C:\Users\manitak\Desktop\digikalalara\public" />
-      <recent name="C:\Users\manitak\Desktop\digikalalara\resources\assets\Admin\js" />
-      <recent name="C:\Users\manitak\Desktop\digikalalara\resources\assets\Admin\css" />
-      <recent name="C:\Users\manitak\Desktop\digikalalara\resources\assets\Admin" />
+      <recent name="C:\Users\manitak\Desktop\digikalalara\resources\views\Seller" />
+      <recent name="C:\Users\manitak\Desktop\digikalalara\resources\views\Seller\auth" />
+      <recent name="C:\Users\manitak\Desktop\digikalalara\app\Http\Controllers\Seller\Auth" />
+      <recent name="C:\Users\manitak\Desktop\digikalalara\app\Http\Controllers\Seller" />
+      <recent name="C:\Users\manitak\Desktop\digikalalara\app\Http\Controllers\Auth\Seller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\manitak\Desktop\digikalalara\resources\views\Seller\auth" />
+      <recent name="C:\Users\manitak\Desktop\digikalalara\public\assets\Admin\css" />
+      <recent name="C:\Users\manitak\Desktop\digikalalara\public\assets\Admin\plugins" />
       <recent name="C:\Users\manitak\Desktop\digikalalara\resources\views\auth\seller" />
       <recent name="C:\Users\manitak\Desktop\digikalalara\resources\views\auth\seller\mail" />
-      <recent name="C:\Users\manitak\Desktop\digikalalara\public\assets\Admin\fonts" />
-      <recent name="C:\Users\manitak\Desktop\digikalalara\resources\views\Admin\city" />
-      <recent name="C:\Users\manitak\Desktop\digikalalara\resources\views\Admin\province" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -518,16 +595,20 @@
       <workItem from="1620821002628" duration="1741000" />
       <workItem from="1620830489072" duration="18149000" />
       <workItem from="1620886766844" duration="29708000" />
+      <workItem from="1620935454128" duration="104000" />
+      <workItem from="1620965867987" duration="30769000" />
+      <workItem from="1621015350864" duration="6748000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49598000" />
+    <option name="totallyTimeSpent" value="87219000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25373134" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26172706" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -546,7 +627,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25373134" />
@@ -586,334 +667,311 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../shabab/pro1/app/Http/Controllers/CityController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/TrimStrings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="35" />
+        <state relative-caret-position="238">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/province/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../shabab/pro1/resources/views/admin/cities/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="64" column="65" lean-forward="true" selection-start-line="60" selection-start-column="56" selection-end-line="64" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/city/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="57" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/city/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/city/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/section/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="302" column="48" selection-start-line="302" selection-start-column="48" selection-end-line="302" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Admin/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2021_05_12_153442_create_cities_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="99" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2021_05_12_201225_create_financials_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="45" selection-start-line="17" selection-start-column="12" selection-end-line="21" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2021_05_13_063144_create_documents_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2021_05_12_201647_create_addresses_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://G:/laravel/project/app/Providers/EventServiceProvider.php">
+    <entry file="file://G:/New folder/New folder (8)/project/marketuni/app/Notifications/AdminResetPasswordNotification.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2021_05_13_063627_create_calenders_table.php">
+    <entry file="file://G:/New folder/New folder (8)/project/marketuni/app/Providers/AuthServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://G:/New folder/New folder (8)/project/marketuni/app/Providers/RouteServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        <state relative-caret-position="-573" />
+      </provider>
+    </entry>
+    <entry file="file://G:/New folder/New folder (8)/project/marketuni/app/Providers/EventServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://G:/New folder/New folder (8)/project/marketuni/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://G:/New folder/New folder (8)/project/marketuni/app/Http/Controllers/Auth/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63" />
+      </provider>
+    </entry>
+    <entry file="file://G:/New folder/New folder (8)/project/marketuni/app/Http/Controllers/Backend/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://G:/New folder/New folder (8)/project/marketuni/app/Mail/EmailVerification.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://G:/New folder/New folder (8)/project/marketuni/config/logging.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://G:/New folder/New folder (8)/project/marketuni/config/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2613" />
+      </provider>
+    </entry>
+    <entry file="file://G:/New folder/New folder (8)/project/marketuni/config/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1542" />
+      </provider>
+    </entry>
+    <entry file="file://G:/New folder/New folder (8)/project/marketuni/config/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="119" column="29" lean-forward="true" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2021_05_13_062048_create_contracts_table.php">
+    <entry file="file://G:/New folder/New folder (8)/project/marketuni/app/Console/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://G:/New folder/New folder (8)/project/marketuni/app/Http/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="54" selection-start-line="17" selection-start-column="12" selection-end-line="23" selection-end-column="54" />
+        <state relative-caret-position="1087">
+          <caret line="64" column="34" lean-forward="true" selection-start-line="64" selection-start-column="7" selection-end-line="64" selection-end-column="34" />
+          <folding>
+            <element signature="e#28#60#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/seller/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/seller/section/errors.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/seller/section/footer.blade.php">
+    <entry file="file://G:/New folder/New folder (8)/project/marketuni/app/Exceptions/Handler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        <state relative-caret-position="175">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="e#34#99#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/New folder/New folder (8)/project/marketuni/app/Http/Middleware/RedirectIfAuthenticated.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding>
+            <element signature="e#39#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Authenticate.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/New folder/New folder (8)/project/marketuni/resources/views/auth/admin-login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="156" selection-end-line="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="821">
-          <caret line="72" column="1" lean-forward="true" selection-start-line="11" selection-end-line="72" selection-end-column="1" />
+        <state relative-caret-position="515">
+          <caret line="82" column="68" selection-start-line="82" selection-start-column="68" selection-end-line="82" selection-end-column="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../shabab/pro1/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="141" column="3" lean-forward="true" selection-start-line="128" selection-end-line="141" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/seller/section/header.blade.php">
+    <entry file="file://G:/New folder/New folder (8)/projects/pro1/vendor/laravel/framework/src/Illuminate/Auth/Authenticatable.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/seller/master.blade.php">
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/ui/auth-backend/AuthenticatesUsers.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://G:/New folder/New folder (8)/projects/pro1/vendor/laravel/ui/auth-backend/AuthenticatesUsers.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://G:/New folder/New folder (8)/projects/pro1/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="46" selection-end-line="22" selection-end-column="7" />
+        <state relative-caret-position="-1542" />
+      </provider>
+    </entry>
+    <entry file="file://G:/New folder/New folder (8)/project/marketuni/app/Http/Controllers/Auth/AdminLoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="118" selection-start-line="26" selection-start-column="99" selection-end-line="26" selection-end-column="118" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
+    <entry file="file://G:/New folder/New folder (8)/project/marketuni/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+        <state relative-caret-position="629">
+          <caret line="55" column="73" selection-start-line="55" selection-start-column="73" selection-end-line="55" selection-end-column="73" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../shabab/pro1/app/Http/Controllers/Auth/RegisterController.php">
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+        <state relative-caret-position="661">
+          <caret line="412" column="31" selection-start-line="412" selection-start-column="31" selection-end-line="412" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
           <folding>
-            <element signature="e#44#51#0#PHP" expanded="true" />
+            <element signature="e#39#78#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-998" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../shabab/pro1/config/mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1100" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../shabab/pro1/resources/views/auth/register.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="40" column="62" selection-start-line="39" selection-start-column="40" selection-end-line="40" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2021_05_12_193730_create_sellers_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2021_05_12_200351_create_profiles_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="40" selection-start-line="17" selection-start-column="10" selection-end-line="22" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/verify.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/City.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ProvinceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="44" column="49" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="44" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/seller/mail/codeAccept.blade.php">
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Authenticatable.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2021_05_13_135547_create_regcopies_table.php">
+    <entry file="file://$PROJECT_DIR$/app/Models/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        <state>
+          <folding>
+            <element signature="e#30#76#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/app/Models/Seller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="60" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="60" />
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#30#70#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/seller/codeAccept.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/Seller/auth/register.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/seller/register.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="30" selection-end-line="33" selection-end-column="11" />
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Mail/SellerRegisterMail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        <state relative-caret-position="493">
+          <caret line="32" column="94" selection-start-line="32" selection-start-column="94" selection-end-line="32" selection-end-column="94" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/CityRequest.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/Seller/auth/registerCode.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="10" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="35" selection-end-column="10" />
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/Photo.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/Seller/auth/codeAccept.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CityController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Seller/Auth/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="70" column="66" selection-start-line="70" selection-start-column="66" selection-end-line="70" selection-end-column="66" />
+        <state relative-caret-position="731">
+          <caret line="61" column="43" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../artist/app/Http/Controllers/Admin/AdminController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/Seller/auth/master.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2021_05_13_164309_create_photos_table.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Seller/DocumentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        <state relative-caret-position="-204" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Seller/auth/sellerLogin.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/seller/mail/registerCode.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/Seller/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/Seller/RegisterController.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="59" column="68" selection-start-line="59" selection-start-column="68" selection-end-line="59" selection-end-column="68" />
+        <state relative-caret-position="357">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Seller/auth/section/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Seller/auth/documentsSend.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="98" selection-start-line="10" selection-start-column="98" selection-end-line="10" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Seller/auth/wellcom.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Seller/PhotoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
-            <element signature="e#52#88#0#PHP" expanded="true" />
+            <element signature="e#47#83#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/PhotoRequest.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Seller/SellerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+        <state relative-caret-position="255">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../shabab/pro1/app/Http/Controllers/ProductController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Seller/Auth/SellerLoginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="48" column="5" lean-forward="true" selection-start-line="37" selection-start-column="3" selection-end-line="48" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/seller/documentsSend.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PhotoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="442">
+          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+          <folding>
+            <element signature="e#52#88#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

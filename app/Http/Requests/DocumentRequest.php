@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class PhotoRequest extends FormRequest
+class DocumentRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,14 +23,8 @@ class PhotoRequest extends FormRequest
      */
     public function rules()
     {
-           if($this->method() == 'POST') {
-               return [
-                   'photoDocu' => 'required|image|mimes:jpeg,jpg,png,bmp|max:2048',
-               ];
-           }
-
         return [
-            'photoDocu' => 'required|image|mimes:jpeg,jpg,png,bmp|max:2048',
+            //
         ];
     }
 }

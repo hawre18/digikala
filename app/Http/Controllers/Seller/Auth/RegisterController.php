@@ -1,13 +1,15 @@
 <?php
 
-namespace App\Http\Controllers\auth\Seller;
+namespace App\Http\Controllers\Seller\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\Document;
 use App\Models\Regcopy;
 use App\Models\Seller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\SellerRegisterMail;
 
@@ -15,7 +17,7 @@ class RegisterController extends Controller
 {
 
    public function register(){
-       return view('auth.seller.register');
+       return view('Seller.auth.register');
    }
 
    public function senderCode(Request $request)
@@ -42,7 +44,7 @@ class RegisterController extends Controller
         Mail::to('hawremi18@gmail.com')->send(new SellerRegisterMail(
             $data
         ));
-       return view('auth.seller.codeAccept',compact('email'));
+       return view('Seller.auth.codeAccept',compact('email'));
 
     }
     public function codeAccept(Request $request){
@@ -54,10 +56,10 @@ class RegisterController extends Controller
                foreach ($seller as $sell1){
                    $sell2=Seller::where('sellerCode',$code)->first();
                    $sell2->email=$sell1->email;
-                   $sell2->password=$sell1->password;
+                   $sell2->password=Hash::make($sell1->password);
                    $sell2->phone=$sell1->phone;
                    $sell2->save();
-                   return view('auth.seller.documentsSend',compact('code'));
+                   return view('Seller.auth.documentsSend',compact('code'));
                }
            }
        }catch (\Exception $e){
@@ -65,6 +67,12 @@ class RegisterController extends Controller
        }
 
 
+    }
+    public function documents(Request $request){
+       $documents=new Document();
+       $documents->sellerCode=$request->sellerCode;
+        $photos=explode(',',$request->input('photo_id')[0]);
+        $documents->photos()->sync($photos);
     }
 
 }

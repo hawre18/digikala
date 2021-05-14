@@ -1,4 +1,4 @@
-@extends('.auth.seller.master')
+@extends('Seller.auth.master')
 @section('content')
 <div class="register-box">
     <div class="register-logo">
