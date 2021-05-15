@@ -30,4 +30,21 @@ class PhotoController extends Controller
 
 
     }
+    public function uploadPhotoBrand(Request $request){
+        $uploadedFile=$request->file('file');
+        $filename=time().$uploadedFile->getClientOriginalName();
+        $original_name=$uploadedFile->getClientOriginalName();
+        Storage::disk('local')->putFileas(
+            'public/'.Carbon::now()->year.'/Brands/photos',$uploadedFile,$filename
+        );
+        $photo=new Photo();
+        $photo->originalName=$original_name;
+        $photo->path=$filename;
+        $photo->save();
+        return response()->json([
+            'photo_id'=>$photo->id
+        ]);
+
+
+    }
 }

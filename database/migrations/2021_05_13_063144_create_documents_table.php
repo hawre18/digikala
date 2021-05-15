@@ -15,13 +15,13 @@ class CreateDocumentsTable extends Migration
     {
         Schema::create('documents', function (Blueprint $table) {
             $table->id();
-            $table->double('seller_id')->unsigned();
-            $table->foreign('seller_id')->references('id')->on('sellers')->onDelete('cascade');
-            $table->double('photo_id')->unsigned();
+            $table->integer('sellerCode')->unsigned();
+            $table->foreign('sellerCode')->references('sellerCode')->on('sellers')->onDelete('cascade');
+            $table->integer('photo_id')->unsigned();
             $table->foreign('photo_id')->references('id')->on('photos')->onDelete('cascade');
-            $table->string('title',20);
+            $table->string('title',20)->default('پیش فرض');
             $table->string('status',10)->default('pending');
-            $table->date('expired');
+            $table->date('expired')->nullable();
             $table->timestamps();
         });
     }

@@ -198,22 +198,15 @@
 </div>
 <!-- ./wrapper -->
 
-<!-- jQuery 3 -->
 <script src="/assets/Admin/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="/assets/Admin/bower_components/jquery-ui/jquery-ui.min.js"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
     $.widget.bridge('uibutton', $.ui.button);
 </script>
-<!-- Bootstrap 3.3.7 -->
 <script src="/assets/Admin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- Morris.js charts -->
 <script src="/assets/Admin/bower_components/raphael/raphael.min.js"></script>
-<script src="/assets/Admin/bower_components/morris.js/morris.min.js"></script>
-<!-- Sparkline -->
 <script src="/assets/Admin/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
-<!-- jvectormap -->
 <script src="/assets/Admin/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
 <script src="/assets/Admin/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
 <!-- jQuery Knob Chart -->
@@ -234,4 +227,38 @@
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="/assets/Admin/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
+<script src="assets/Admin/js/app.js')}}"></script>
 <script src="/assets/Admin/js/demo.js"></script>
+<script type="text/javascript" src="/assets/Admin/plugins/dropzone.js"></script>
+<script type="text/javascript" src="assets/Admin/plugins/ckeditor/ckeditor.js')}}"></script>
+<script>
+    Dropzone.autoDiscover=false;
+    var drop = new Dropzone('#photo', {
+        addRemoveLinks: true,
+        maxFiles: 1,
+        url: "{{ route('photosBrand.upload') }}",
+        sending: function(file, xhr, formData){
+            formData.append("_token","{{csrf_token()}}")
+        },
+        success: function(file, response){
+            document.getElementById('brand-photo').value = response.photo_id
+        }
+    });
+    CKEDITOR.replace('ShortDescription',{
+        customConfig:'config.js',
+        toolbar:'simple',
+        language:'fa',
+        removePlugins:'cloudservices, easyimage'
+    });
+    CKEDITOR.replace('longDescription',{
+        customConfig:'config.js',
+        toolbar:'simple',
+        language:'fa',
+        removePlugins:'cloudservices, easyimage'
+    })
+    removeImages=function (id) {
+        var index=photo.indexOf(id)
+        photo.splice(index,1);
+        document.getElementById('updated_photo_'+id).remove();
+    }
+</script>

@@ -15,10 +15,10 @@ class CreateCalendersTable extends Migration
     {
         Schema::create('calenders', function (Blueprint $table) {
             $table->id();
-            $table->double('seller_id')->unsigned();
+            $table->integer('seller_id')->unsigned();
             $table->foreign('seller_id')->references('id')->on('sellers')->onDelete('cascade');
             $table->date('closingDate');
-            $table->string('sttus',15);
+            $table->string('sttus',15)->default('ok');
             $table->timestamps();
         });
     }

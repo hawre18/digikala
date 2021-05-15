@@ -17,11 +17,11 @@ class CreateContractsTable extends Migration
             $table->id();
             $table->double('seller_id')->unsigned();
             $table->foreign('seller_id')->references('id')->on('sellers')->onDelete('cascade');
-            $table->string('status',15);
-            $table->string('controctStart');
-            $table->string('contractEnd');
-            $table->integer('invoiceCalculationInterval');
-            $table->integer('billingPaymentInterval');
+            $table->string('status',15)->default('issued');
+            $table->string('controctStart')->nullable();
+            $table->string('contractEnd')->nullable();
+            $table->integer('invoiceCalculationInterval')->default('30');
+            $table->integer('billingPaymentInterval')->default('30');
             $table->timestamps();
         });
     }

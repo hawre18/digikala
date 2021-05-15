@@ -15,9 +15,9 @@ class CreateFinancialsTable extends Migration
     {
         Schema::create('financials', function (Blueprint $table) {
             $table->id();
-            $table->double('seller_id')->unsigned();
+            $table->integer('seller_id')->unsigned();
             $table->foreign('seller_id')->references('id')->on('sellers')->onDelete('cascade');
-            $table->string('status',15);
+            $table->string('status',15)->default('pending');
             $table->string('nameOfAccountHolder');
             $table->string('shabaNumber',26);
             $table->timestamps();

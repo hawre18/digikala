@@ -15,7 +15,7 @@ class CreateRegcopiesTable extends Migration
     {
         Schema::create('regcopies', function (Blueprint $table) {
             $table->id();
-            $table->double('seller_id')->unsigned();
+            $table->integer('seller_id')->unsigned();
             $table->foreign('seller_id')->references('id')->on('sellers')->onDelete('cascade');
             $table->string('registerCode',15);
             $table->string('email')->unique();

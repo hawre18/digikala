@@ -15,7 +15,7 @@ class CreateSellersTable extends Migration
     {
         Schema::create('sellers', function (Blueprint $table) {
             $table->id();
-            $table->double('sellerCode')->unsigned();
+            $table->integer('sellerCode')->unsigned();
             $table->integer('profile_id')->unsigned()->nullable();
             $table->foreign('profile_id')->references('id')->on('profiles')->onDelete('cascade');
             $table->integer('financial_id')->unsigned()->nullable();

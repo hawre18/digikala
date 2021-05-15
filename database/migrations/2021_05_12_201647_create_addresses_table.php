@@ -17,7 +17,6 @@ class CreateAddressesTable extends Migration
             $table->id();
             $table->integer('seller_id');
             $table->foreign('seller_id')->references('id')->on('sellers')->onDelete('cascade');
-            $table->string('email');
             $table->string('tellPhone',15);
             $table->string('cellPhone',15);
             $table->string('website')->nullable();
