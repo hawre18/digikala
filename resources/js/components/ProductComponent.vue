@@ -1,6 +1,5 @@
 <template>
     <div>
-        <!--Left Part Start -->
         <aside id="column-left" class="col-sm-3 hidden-xs">
             <h3 class="subtitle">فیلتر</h3>
             <div class="box-category">
@@ -22,8 +21,6 @@
                 </ul>
             </div>
         </aside>
-        <!--Left Part End -->
-        <!--Middle Part Start-->
         <div id="content" class="col-sm-9">
             <h1 class="title">{{category.name}}</h1>
             <div class="product-filter">
@@ -75,7 +72,7 @@
             </div>
             <div class="row" v-if="products.last_page">
                 <div class="col-sm-12 text-center">
-                    <paginate
+                  <!--  <paginate
                         v-model="page"
                         :page-count="products.last_page"
                         :page-range="3"
@@ -85,7 +82,7 @@
                         :next-text="'بعدی'"
                         :container-class="'pagination'"
                         :page-class="'page-item'">
-                    </paginate>
+                    </paginate> !-->
                 </div>
             </div>
         </div>

@@ -4,11 +4,9 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-
 require('./bootstrap');
-window.Vue = require('vue');
-window.$ = require('jquery');
-var Paginate = require('vuejs-paginate');
+
+window.Vue = require('vue').default;
 
 /**
  * The following block of code may be used to automatically register your
@@ -22,9 +20,6 @@ var Paginate = require('vuejs-paginate');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('attribute-component', require('./components/AttributeComponent').default)
-Vue.component('product-component', require('./components/ProductComponent').default)
-Vue.component('paginate',Paginate)
-
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

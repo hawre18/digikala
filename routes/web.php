@@ -28,6 +28,8 @@ Route::namespace('App\Http\Controllers\Admin')->prefix('admin')->group(function 
     Route::get('orders','OrderController@index')->name('orders.index');
     Route::get('orders/lists/{id}','OrderController@getOrderLists')->name('orders.lists');
     Route::get('orders/send/{id}','OrderController@send')->name('order.send');
+    Route::get('products.delete/{id}','ProductController@delete')->name('products.delete');
+    Route::resource('products','ProductController');
     /** Route::resource('/aboutme','ArtistController');
     Route::resource('/articles','ArticleController'); **/
 });

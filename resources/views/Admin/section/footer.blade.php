@@ -227,10 +227,10 @@
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="/assets/Admin/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="assets/Admin/js/app.js')}}"></script>
+<script src="/Admin/js/app.js"></script>
 <script src="/assets/Admin/js/demo.js"></script>
 <script type="text/javascript" src="/assets/Admin/plugins/dropzone.js"></script>
-<script type="text/javascript" src="assets/Admin/plugins/ckeditor/ckeditor.js')}}"></script>
+<script type="text/javascript" src="/assets/Admin/plugins/ckeditor/ckeditor.js"></script>
 <script>
     Dropzone.autoDiscover=false;
     var drop = new Dropzone('#photo', {
