@@ -2,7 +2,7 @@
 @section('content')
 <div class="register-box">
     <div class="register-logo">
-        <a href="../../index2.html"><b>ثبت نام در سایت</b></a>
+        <a href=""><b>ثبت نام در سایت</b></a>
     </div>
     <div class="register-box-body">
         <p class="login-box-msg">ثبت نام کاربر جدید</p>

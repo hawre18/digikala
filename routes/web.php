@@ -47,3 +47,18 @@ Route::prefix('api')->group(function () {
     Route::get('/categories', 'CategoryController@apiIndex');
     Route::post('/categories/attribute', 'CategoryController@apiIndexAttribute');
 });
+Route::namespace('App\Http\Controllers\User')->prefix('/')->group(function (){
+    Route::get('/','UserController@index');
+    Route::get('/cart','UserController@cart')->name('cart');
+    Route::get('/cart-empty','UserController@cart_empty')->name('cart-empty');
+    Route::get('/comment','UserController@comment')->name('comment');
+    Route::get('/failed','UserController@failed')->name('failed');
+    Route::get('/login','UserController@login')->name('login');
+    Route::get('payment','UserController@payment')->name('payment');
+    Route::get('/product-out','UserController@product_out')->name('product-out');
+    Route::get('/register','UserController@register')->name('register');
+    Route::get('/search','UserController@search')->name('search');
+    Route::get('/shipping','UserController@shipping')->name('shipping');
+    Route::get('/success','UserController@success')->name('success');
+});
+

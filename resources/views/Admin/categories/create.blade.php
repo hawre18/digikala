@@ -44,6 +44,11 @@
                                 <label for="meta_keywords">کلمات کلید سئو</label>
                                 <input type="text" name="meta_keywords" value="{{old('meta_keywords')}}" class="form-control" placeholder="کلمات کلیدی سئو را وارد کنید">
                             </div>
+                            <div class="form-group">
+                                <label for="photo">تصویر</label>
+                                <input type="hidden" name="photo_id" id="brand-photo">
+                                <div id="photo" class="dropzone"></div>
+                            </div>
                             <button type="submit" class="btn btn-success pull-left">ذخیره</button>
                         </form>
                     </div>
